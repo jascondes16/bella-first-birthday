@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bella’s 1st Birthday</title>
+  <meta name="description" content="You’re invited to Bella’s first birthday celebration! RSVP here." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Top Nav -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#top" aria-label="Go to top">
+        <span class="brand-dot"></span>
+        Bella’s 1st Birthday
+      </a>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#details">Map</a>
+        <a href="#rsvp">Form</a>
+        <a href="#gallery">Gallery</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main id="top" class="hero">
+  <div class="container">
+
+    <section class="hero-unified fade-in">
+      <div class="hero-unified-grid">
+
+        <!-- LEFT CONTENT -->
+        <div class="hero-left">
+          <p class="pill">You’re Invited ✨</p>
+          <h1 class="hero-title">Bella’s <span>First Birthday</span></h1>
+          <p class="hero-subtitle">
+            Come celebrate 1 sweet year of Bella with love, laughter, and cake!
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn primary" href="#rsvp">Fill-up Now</a>
+            <button class="btn ghost" id="addToCalendarBtn">Add to Calendar</button>
+          </div>
+
+          <div class="countdown" aria-label="Countdown">
+            <div class="count-box">
+              <div class="count-num" id="days">--</div>
+              <div class="count-label">Days</div>
+            </div>
+            <div class="count-box">
+              <div class="count-num" id="hours">--</div>
+              <div class="count-label">Hours</div>
+            </div>
+            <div class="count-box">
+              <div class="count-num" id="mins">--</div>
+              <div class="count-label">Minutes</div>
+            </div>
+            <div class="count-box">
+              <div class="count-num" id="secs">--</div>
+              <div class="count-label">Seconds</div>
+            </div>
+          </div>
+
+          <div class="grid-3">
+            <article class="info-card fade-in">
+              <h3>📅 Date</h3>
+              <p id="eventDateText">May 17, 2026 (Sunday)</p>
+            </article>
+
+            <article class="info-card fade-in">
+              <h3>⏰ Time</h3>
+              <p id="eventTimeText">1:30 PM - 4:00 PM</p>
+            </article>
+
+            <article class="info-card fade-in">
+              <h3>📍 Venue</h3>
+              <p id="eventVenueText">Jollibee - Los Baños Crossing, Laguna</p>
+            </article>
+          </div>
+        </div>
+
+        <!-- RIGHT PHOTO -->
+        <div class="hero-right">
+          <div class="photo-frame">
+            <img class="hero-img" src="assets/bella.jpg" alt="Bella birthday photo" />
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+</main>
+
+  <!-- Details -->
+  <section id="details" class="section">
+    <div class="container">
+      <div class="section-head fade-in">
+        <h2>Map Details</h2>
+        <p>Lost? Here’s the map preview.</p>
+      </div>
+
+<!--       <div class="grid-3">
+        <article class="info-card fade-in">
+          <h3>📅 Date</h3>
+          <p id="eventDateText">May 17, 2026 (Sunday)</p>
+        </article>
+
+        <article class="info-card fade-in">
+          <h3>⏰ Time</h3>
+          <p id="eventTimeText">1:30 PM - 4:00 PM</p>
+        </article>
+
+        <article class="info-card fade-in">
+          <h3>📍 Venue</h3>
+          <p id="eventVenueText">Jollibee - Los Baños Crossing, Laguna</p>
+        </article>
+      </div> -->
+
+     <!--  <div class="two-col">
+        <article class="info-card fade-in">
+          <h3>What to Expect</h3>
+          <ul class="list">
+            <li>Snacks & drinks 🍰</li>
+            <li>Games & fun 🎈</li>
+            <li>Photo corner 📸</li>
+            <li>Cake moment 🎂</li>
+          </ul>
+        </article>
+
+        <article class="info-card fade-in">
+          <h3>Notes</h3>
+          <p>
+            Please RSVP so we can prepare. If you have dietary needs, add them in the form.
+          </p>
+          <p class="small">
+            Tip: You can also add a Google Map link here if you want.
+          </p>
+        </article>
+      </div> -->
+
+      <div class="map-card fade-in">
+        <h3>🗺️ Location Map</h3>
+        <p class="small">Use the map below for directions.</p>
+
+        <div class="map-embed">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3868.2821582449046!2d121.23988887489004!3d14.178245086259585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd61faf40e0211%3A0xb017458f0f140278!2sJollibee%20-%20Los%20Ba%C3%B1os!5e0!3m2!1sfil!2sph!4v1778168282146!5m2!1sfil!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RSVP (Google Form Embed) -->
+  <section id="rsvp" class="section alt">
+    <div class="container">
+      <div class="section-head fade-in">
+        <h2>Attendees Form</h2>
+        <p>Kindly confirm if you can attend 💗</p>
+      </div>
+
+      <div class="rsvp-wrap fade-in">
+        <div class="rsvp-card">
+          <h3>Fill-up the following</h3>
+
+          <!-- ✅ GOOGLE FORM EMBED:
+               Replace the src value with your Google Form "Embed" URL -->
+          <div class="form-embed">
+            <iframe
+              id="googleForm"
+              title="Attendees Google Form"
+              src="https://docs.google.com/forms/d/e/1FAIpQLSfas-BOZQrnkeNYPaqgMHFjzaILknEXn-cikMxxFcwQprmiOA/viewform?embedded=true"
+              frameborder="0"
+              marginheight="0"
+              marginwidth="0"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+              Loading…
+            </iframe>
+          </div>
+        </div>
+
+        <div class="rsvp-side">
+          <div class="side-card">
+            <h3>Contact</h3>
+            <p><strong>Parent/Host:</strong> Jas Condes</p>
+            <p><strong>Mobile:</strong> 0938-500-0409</p>
+            <p><strong>Message:</strong> Feel free to message for questions.</p>
+          </div>
+
+          <div class="side-card">
+            <h3>Gift Note (Optional)</h3>
+            <p class="small">
+              Your presence is the best gift. But if you’d like, baby essentials are appreciated 💕
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Simple Gallery -->
+  <section id="gallery" class="section">
+    <div class="container">
+      <div class="section-head fade-in">
+        <h2>Moments</h2>
+        <p>Little snapshots of Bella’s first year.</p>
+      </div>
+
+      <div class="gallery fade-in">
+        <button class="g-item" data-full="assets/bella.jpg" aria-label="View photo 1">
+          <img src="assets/bella.jpg" alt="Bella moment 1">
+        </button>
+
+        <button class="g-item" data-full="assets/bella2.jpg" aria-label="View photo 2">
+          <img src="assets/bella2.jpg" alt="Bella moment 2">
+        </button>
+
+        <button class="g-item" data-full="assets/bella3.jpg" aria-label="View photo 3">
+          <img src="assets/bella3.jpg" alt="Bella moment 3">
+        </button>
+
+        <button class="g-item" data-full="assets/bella4.jpg" aria-label="View photo 4">
+          <img src="assets/bella4.jpg" alt="Bella moment 4">
+        </button>
+
+        <button class="g-item" data-full="assets/bella5.jpg" aria-label="View photo 5">
+          <img src="assets/bella5.jpg" alt="Bella moment 5">
+        </button>
+
+        <button class="g-item" data-full="assets/bella6.jpg" aria-label="View photo 6">
+          <img src="assets/bella6.jpg" alt="Bella moment 6">
+        </button>
+      </div>
+    </div>
+  </section>
+  <!-- Lightbox Modal -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+
+    <div class="lightbox-content" role="dialog" aria-modal="true" aria-label="Image viewer">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close">✕</button>
+      <img id="lightboxImg" alt="Full size photo" />
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>Made with 💗 for Bella’s 1st Birthday</p>
+      <a href="#top" class="back-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

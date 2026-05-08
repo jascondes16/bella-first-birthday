@@ -6,7 +6,7 @@
   const QUERY = encodeURIComponent("select A,B,C,D order by A desc");
 
   // ✅ Use & (NOT &amp;) and encode TAB_NAME
-  const URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?sheet=${encodeURIComponent(TAB_NAME)}&tq=${QUERY}`;
+  const URL = "https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?sheet=${encodeURIComponent(TAB_NAME)}&tq=${QUERY}";
 
   const wishesDiv = document.getElementById("wishes");
   const status = document.getElementById("status");

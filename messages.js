@@ -4,7 +4,7 @@ const TAB_NAME = "Mga Tugon sa Form 1";
 // A=Timestamp, B=Name, C=Message, D=Approved (optional)
 const QUERY = encodeURIComponent("select A,B,C,D order by A desc");
 
-const URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?sheet=${encodeURIComponent(TAB_NAME)}&tq=${QUERY}`;
+const URL = "https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?sheet=${encodeURIComponent(TAB_NAME)}&tq=${QUERY}";
 
 
 const wishesDiv = document.getElementById("wishes");
